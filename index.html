@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النظام الشمسي - استكشاف الكون</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-400 font-sans">
+
+  
+  
+<nav class="bg-black px-4 py-6 border-b border-gray-500 w-full z-10">
+        <ul class="container  flex gap-8 items-center px-8">
+            <li class="font-extrabold text-white">النظام الشمسي</li>
+            <li><a href="index.html" class="text-white hover:text-yellow-600 transition duration-300">الرئيسية</a></li>
+            <li><a href="planetes.html" class="text-white hover:text-yellow-600 transition duration-300">الكواكب</a></li>
+
+        </ul>
+
+</nav>
+
+  <div class="max-w-3xl mx-auto bg-center  shadow-lg rounded-lg p-8 mt-10">
+       
+        <h1 class="text-7xl font-bold text-center mb-6 text-white ">استكشاف النظام الشمسي</h1>
+         <img src="img/solar.jpg" alt="أورانوس" class="w-full h-48 object-cover" loading="lazy" class="bg-cover absolute ">
+
+<div class="font-extrabold text-white flex mt-8">
+   <div class="flex items-center gap-4 border-l p-4 border-gray-300"><p class="text-6xl">8</p> <p class="text-3xl">كواكب</p></div> 
+    <div class="flex items-center gap-4 border-l p-4 border-gray-300"><p class="text-6xl">200</p> <p class="text-3xl">قمر</p></div> 
+   <div class="flex items-center gap-4 border-l p-4 border-gray-300"><p class="text-6xl">1.1 </p> <p class="text-3xl">مليون كويكب</p></div> 
+   <div class="flex items-center gap-4 p-4"><p class="text-6xl">5 </p> <p class="text-3xl"> كواكب قزمة</p></div> 
+
+</div>
+ <button id="showMoreButton" class="bg-white text-black px-4 py-2 rounded-full w-32 mr-72 mt-20">عرض المزيد</button>
+
+     <div id="extraContent" class="hidden mt-10">
+        <p class="mb-4 leading-relaxed">
+            النظام الشمسي هو المجموعة التي تتكون من الشمس وجميع ما يَدور حولها من أجرام بما في ذلك الأرض والكواكب الأخرى. ويَشمل النظام الشمسي أجراماً أخرى أصغر حجماً هي الكواكب الصغيرة والكويكبات والنيازك والمذنبات، إضافة إلى سحابة رقيقة من الغاز والغبار تسمى بـ"الوَسَط بين الكوكبي".
+        </p>
+        <p class="mb-4 leading-relaxed">
+            ليس النظام الشمسي سوى جزء صغير من نظام ضخم من النجوم والأجسام الأخرى تسمى مجرة درب التبانة. حيث يدور النظام الشمسي حول مركز المجرة مرة واحدة كل 225 مليون سنة.
+        </p>
+
+        <h3 class="text-lg font-bold mt-4 mb-2">عناصر النظام الشمسي</h3>
+
+        <div class="section flex mt-20 gap-10">
+            <img class='w-48' src="img/sun.jpg" alt="الشمس">
+            <div>
+                <h4 class="font-semibold text-white mb-4">الشمس</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    الشمس هي نجم ضخم يُوجد في مركز النظام الشمسي وهو أكبر جسم في النظام الشمسي حيث يبلغ قطرها 1،392،000 كيلومتر. وتحتوي الشمس على أكثر من 99٪ من جميع المواد الموجودة في النظام الشمسي.
+                </p>
+            </div>
+        </div>
+
+        <div class="section flex mt-20 gap-10">
+            <div>
+                <h4 class="font-semibold text-white mb-4">الرياح الشمسية</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    تطلق الغازات التي تحيط بالشمس تيارًا من الجزيئات الصغيرة يسمى الرياح الشمسية، حيث يتدفق إلى الخارج عبر النظام الشمسي بِرُمَّته.
+                </p>
+            </div>
+            <img class='w-48' src="img/wind.jpg" alt="الرياح الشمسية">
+        </div>
+
+        <div class="section flex mt-20 gap-10">
+            <img class='w-48' src="img/planetes.jpg" alt="الكواكب">
+            <div>
+                <h4 class="font-semibold text-white mb-4">الكواكب</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    أكبر الأجسام في النظام الشمسي هي الكواكب من بعد الشمس وترتيب هذه الكواكب من الأقرب إلى الشمس هي عطارد والزهرة والأرض والمريخ والمشتري وزحل وأورانوس ونبتون.
+                </p>
+            </div>
+        </div>
+
+        <div class="section flex mt-20 gap-10">
+            <div>
+                <h4 class="font-semibold text-white mb-4">الكويكبات</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    تدور ملايين القطع الصغيرة من المعادن والصخور التي تسمى الكويكبات حول الشمس وتم العثور على معظم الكويكبات في حلقة بين المِرِّيخ والمشتري.
+                </p>
+            </div>
+            <img class='w-48' src="img/ac.jpg" alt="الكويكبات">
+        </div>
+
+        <div class="section flex mt-20 gap-10">
+            <img class='w-48' src="img/b.jpg" alt="المذنبات" >
+            <div>
+                <h4 class="font-semibold text-white mb-4">المذنبات</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    المذنبات هي قطع صغيرة من المخلفات الترابية والجليد حيث يدور المليارات منها حول الشمس في مسارات طويلة جدًا بأشكال بيضاوية.
+                </p>
+            </div>
+        </div>
+
+        <div class="section flex mt-20 gap-10">
+            <div>
+                <h4 class="font-semibold text-white mb-4">المناطق الخارجية</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    يقع حِزام كايبر خلف نبتون وهو عبارة عن حلقة مسطحة من ملايين الأجسام الصغيرة الجليدية.
+                </p>
+            </div>
+            <img class='w-48' src="img/2024_9_19_20_41_51_418.jpg" alt="المناطق الخارجية">
+        </div>
+
+        <div class="section flex mt-20 gap-10">
+            <img class='w-48' src="img/dd.jpg" alt="تشكيل النظام الشمسي">
+            <div>
+                <h4 class="font-semibold text-white mb-4">كيف تشكل النظام الشمسي؟</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    تشكل النظام الشمسي منذ حوالي 4.7 مليار سنة، قد تكون بدأت كسحابة كبيرة من الغاز والغبار.
+                </p>
+            </div>
+        </div>
+
+        <div class="section flex mt-20 gap-10">
+            <div>
+                <h4 class="font-semibold text-white mb-4">أنظمة الكواكب الأخرى</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    يُعرف النظام الشمسي أيضًا باسم نظام الكواكب. ومنذ تسعينيات القرن الماضي، اكتشف العلماء العديد من أنظمة الكواكب خارج نظامنا الشمسي.
+                </p>
+            </div>
+            <img class='w-48' src="img/zz.jpg" alt="أنظمة الكواكب الأخرى">
+        </div>
+
+        <div class="section flex mt-20 gap-10">
+            <img class='w-48' src="img/qq.jpg" alt="طقس الفضاء">
+            <div>
+                <h4 class="font-semibold text-white mb-4">طقس الفضاء</h4>
+                <p class="text-gray-400 leading-relaxed">
+                    طقس الفضاء هو الظروف البيئية المتغيرة في الفضاء القريب من الأرض، ويمكن أن تتأثر أنشطة الطقس الفضائي بالمركبات الفضائية.
+                </p>
+            </div>
+        </div>
+
+    <script>
+        document.getElementById('showMoreButton').addEventListener('click', function() {
+            const extraContent = document.getElementById('extraContent');
+            if (extraContent.classList.contains('hidden')) {
+                extraContent.classList.remove('hidden');
+                this.textContent = 'عرض أقل'; // Change button text
+            } else {
+                extraContent.classList.add('hidden');
+                this.textContent = 'عرض المزيد'; // Change button text back
+            }
+        });
+    </script>
+    </div>
+
+
+</body>
+</html>
